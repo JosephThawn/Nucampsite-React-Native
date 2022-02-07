@@ -25,9 +25,25 @@ const mapDispatchToProps = {
 
 function RenderCampsite(props) {
 
+    
+
     const {campsite} = props;
 
     const view = React.createRef();
+
+    const recognizeComment = ({dx}) => (dx > 200 ) ? true : false;
+
+    // const panResponder = PanResponder.create({
+    //     onStartShouldSetPanResponder: () => true,
+    //     onPanResponderEnd: (e, gestureState) => {
+    //         console.log('pen responder end', gestureState);
+    //         if(recognizeDrag(gestureState)) {
+    //         onShowModal=() => this.toggleModal()
+
+    //         }
+    //     }
+        
+    // })
 
     const recognizeDrag = ({dx}) => (dx < -200) ? true : false;
 
@@ -57,6 +73,10 @@ function RenderCampsite(props) {
                     ],
                     { cancelable: false }
                 );
+
+            }
+            else if(recognizeComment(gestureState)) {
+                props.onShowModal();
             }
             return true;
         }
