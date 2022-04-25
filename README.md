@@ -49,6 +49,6 @@ This project took me 6 months to finish and working along with Nucamp Bootcamp c
 
 
 ## Contact
-Created by [Pau Thawn](www.linkedin.com/in/pau-thawn) 
+Created by [Pau Thawn](https://www.linkedin.com/in/pau-thawn) 
 Feel free to contact me for any questions! 
 
